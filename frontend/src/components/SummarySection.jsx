@@ -12,7 +12,6 @@ export default function SummarySection({ book, onSuggestionClick }) {
   const [error, setError] = useState('')
 
   useEffect(() => {
-    // Component mount hone par automatically summary fetch karo
     const load = async () => {
       try {
         setLoading(true)

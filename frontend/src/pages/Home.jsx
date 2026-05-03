@@ -18,7 +18,6 @@ export default function Home() {
   const [initialLoading, setInitialLoading] = useState(true)
   const [error, setError] = useState('')
 
-  // Pehli baar ya filter/search change hone par fresh load
   const loadInitial = useCallback(async () => {
     setInitialLoading(true)
     setError('')
@@ -38,7 +37,6 @@ export default function Home() {
     loadInitial()
   }, [loadInitial])
 
-  // Infinite scroll — aur books fetch karo
   const loadMore = async () => {
     try {
       const data = await fetchBooks({ query, startIndex, ...filters })
