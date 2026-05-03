@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const BASE_URL = 'http://localhost:8000'
+// const BASE_URL = 'http://localhost:8000'
+const BASE_URL = 'https://readbot-a1le.onrender.com'
 
 // Books search — infinite scroll ke liye startIndex support
 export const fetchBooks = async ({ query = '', startIndex = 0, category = '', orderBy = 'relevance', minRating = 0 }) => {
